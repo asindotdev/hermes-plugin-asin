@@ -1,0 +1,22 @@
+name: asin
+version: 1.0.0
+description: "Tools to search Amazon and read a product's price history and offers, through the Asin API."
+author: Asin
+license: MIT
+requires_hermes: ">=0.21.6"
+provides_tools:
+  - asin_search_amazon
+  - asin_price_history
+  - asin_get_offers
+provides_hooks: []
+provides_middleware: []
+requires_env:
+  - name: ASIN_API_KEY
+    description: Asin API key
+    url: https://www.asin.dev/app
+    secret: true
+config_schema:
+  api_key:
+    type: secret
+    env: ASIN_API_KEY
+    label: Asin API key
