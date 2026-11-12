@@ -1,6 +1,6 @@
 name: asin
-version: 1.0.0
-description: "Tools to search Amazon and read a product's price history and offers, through the Asin API."
+version: 1.1.0
+description: "Amazon prices for Hermes: search 11 Amazon stores, read a product's price history and seller offers, and keep a watchlist that checks prices on a schedule and emails on drops, through the Asin API."
 author: Asin
 license: MIT
 requires_hermes: ">=0.21.6"
@@ -8,6 +8,14 @@ provides_tools:
   - asin_search_amazon
   - asin_price_history
   - asin_get_offers
+  - asin_read_offers
+  - asin_track_product
+  - asin_list_tracked
+  - asin_tracked_product
+  - asin_update_tracking
+  - asin_check_now
+  - asin_stop_tracking
+  - asin_account
 provides_hooks: []
 provides_middleware: []
 requires_env:
